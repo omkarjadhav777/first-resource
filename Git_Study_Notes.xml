@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<indexing>
+ <object alt="" name="Image1" object_type="graphic"/>
+ <object alt="" name="Image2" object_type="graphic"/>
+ <object alt="" name="Image3" object_type="graphic"/>
+ <object alt="" name="Image4" object_type="graphic"/>
+ <object alt="" name="Image5" object_type="graphic"/>
+ <object alt="" name="Image6" object_type="graphic"/>
+ <object alt="" name="Image7" object_type="graphic"/>
+ <object alt="" name="Image8" object_type="graphic"/>
+ <object alt="" name="Image9" object_type="graphic"/>
+ <object alt="" name="Image10" object_type="graphic"/>
+ <object alt="" name="Image11" object_type="graphic"/>
+ <object alt="" name="Image12" object_type="graphic"/>
+ <object alt="" name="Image13" object_type="graphic"/>
+ <object alt="" name="Image14" object_type="graphic"/>
+ <object alt="" name="Image15" object_type="graphic"/>
+ <paragraph index="55" node_type="writer">GIT</paragraph>
+ <paragraph index="56" node_type="writer">VERSION CONTROL — HANDS-ON STUDY NOTES</paragraph>
+ <paragraph index="57" node_type="writer">                                                                  </paragraph>
+ <paragraph index="58" node_type="writer">A practical walkthrough of Git fundamentals — from repository setup to commit history and ignoring files — compiled while practicing Git hands-on.</paragraph>
+ <paragraph index="62" node_type="writer">Prepared By – Omkar Jadhav.</paragraph>
+ <paragraph index="65" node_type="writer">What's Inside</paragraph>
+ <object index="66" name="Table1" object_type="table"/>
+ <paragraph index="68" node_type="writer" parent_index="66">1</paragraph>
+ <paragraph index="71" node_type="writer" parent_index="66">Introduction to Git</paragraph>
+ <paragraph index="74" node_type="writer" parent_index="66">2</paragraph>
+ <paragraph index="77" node_type="writer" parent_index="66">Key Features of Git</paragraph>
+ <paragraph index="80" node_type="writer" parent_index="66">3</paragraph>
+ <paragraph index="83" node_type="writer" parent_index="66">Git Lifecycle Stages</paragraph>
+ <paragraph index="86" node_type="writer" parent_index="66">4</paragraph>
+ <paragraph index="89" node_type="writer" parent_index="66">git init — Initializing a Repository</paragraph>
+ <paragraph index="92" node_type="writer" parent_index="66">5</paragraph>
+ <paragraph index="95" node_type="writer" parent_index="66">git status — Checking Repository State</paragraph>
+ <paragraph index="98" node_type="writer" parent_index="66">6</paragraph>
+ <paragraph index="101" node_type="writer" parent_index="66">git add — Staging Changes</paragraph>
+ <paragraph index="104" node_type="writer" parent_index="66">7</paragraph>
+ <paragraph index="107" node_type="writer" parent_index="66">git commit — Saving Changes</paragraph>
+ <paragraph index="110" node_type="writer" parent_index="66">8</paragraph>
+ <paragraph index="113" node_type="writer" parent_index="66">git log — Viewing Commit History</paragraph>
+ <paragraph index="116" node_type="writer" parent_index="66">9</paragraph>
+ <paragraph index="119" node_type="writer" parent_index="66">.gitignore — Excluding Files from Version Control</paragraph>
+ <paragraph index="123" node_type="writer">1  Introduction to Git</paragraph>
+ <paragraph index="124" node_type="writer">Definition</paragraph>
+ <paragraph index="125" node_type="writer">Git is a distributed version control system (VCS) designed to handle everything from small to very large projects with speed and efficiency.</paragraph>
+ <paragraph index="126" node_type="writer">Purpose</paragraph>
+ <paragraph index="127" node_type="writer">Tracks changes to source code.</paragraph>
+ <paragraph index="128" node_type="writer">Facilitates collaboration among developers.</paragraph>
+ <paragraph index="129" node_type="writer">Manages project versions and history.</paragraph>
+ <paragraph index="130" node_type="writer">2  Key Features of Git</paragraph>
+ <paragraph index="131" node_type="writer">Distributed System — every developer has a full copy of the repository.</paragraph>
+ <paragraph index="132" node_type="writer">Performance — optimized for speed and efficiency.</paragraph>
+ <paragraph index="133" node_type="writer">Branching and Merging — lightweight branching and merging to support parallel development.</paragraph>
+ <paragraph index="134" node_type="writer">Data Integrity — ensures data is not corrupted during transit or storage.</paragraph>
+ <paragraph index="135" node_type="writer">Support for Non-linear Development — work on multiple tasks simultaneously and merge changes as needed.</paragraph>
+ <paragraph index="136" node_type="writer">3  Git Lifecycle Stages</paragraph>
+ <paragraph index="137" node_type="writer">Git has three stages that track changes in your project</paragraph>
+ <paragraph index="138" node_type="writer">Working Directory — where you edit files.</paragraph>
+ <paragraph index="139" node_type="writer">Staging Area — where you prepare files for commit.</paragraph>
+ <paragraph index="140" node_type="writer">Repository (Local/Remote) — where committed changes are stored.</paragraph>
+ <paragraph index="141" node_type="writer">Git Workflow Overview</paragraph>
+ <paragraph index="142" node_type="writer">1.  Modify a file in the Working Directory.</paragraph>
+ <paragraph index="143" node_type="writer">2.  Add it to the Staging Area using git add.</paragraph>
+ <paragraph index="144" node_type="writer">3.  Commit it to the Repository using git commit.</paragraph>
+ <paragraph index="145" node_type="writer">4  git init — Initializing a Repository</paragraph>
+ <paragraph index="146" node_type="writer">Overview</paragraph>
+ <paragraph index="147" node_type="writer">Initializing a Git repository is the first step to start tracking changes in a project.</paragraph>
+ <paragraph index="148" node_type="writer">Command</paragraph>
+ <paragraph index="149" node_type="writer">git init   # Creates a new Git repository</paragraph>
+ <paragraph index="150" node_type="writer">Steps to Initialize</paragraph>
+ <paragraph index="151" node_type="writer">Open the terminal.</paragraph>
+ <paragraph index="152" node_type="writer">Navigate to your project directory.</paragraph>
+ <paragraph index="153" node_type="writer">Run the command git init.</paragraph>
+ <paragraph index="154" node_type="writer">Post Initialization</paragraph>
+ <paragraph index="155" node_type="writer">A .git directory is created in the project folder.</paragraph>
+ <paragraph index="156" node_type="writer">This directory contains all the metadata and version history for the project.</paragraph>
+ <paragraph index="157" node_type="writer">5  git status — Checking Repository State</paragraph>
+ <paragraph index="158" node_type="writer">Command Overview</paragraph>
+ <paragraph index="159" node_type="writer">git status provides information about the current state of the working directory and staging area.</paragraph>
+ <paragraph index="160" node_type="writer">Purpose</paragraph>
+ <paragraph index="161" node_type="writer">Shows which changes have been staged, which haven't, and which files aren't being tracked by Git.</paragraph>
+ <paragraph index="162" node_type="writer">Command</paragraph>
+ <paragraph index="163" node_type="writer">git status</paragraph>
+ <paragraph index="164" node_type="writer">Output Explanation</paragraph>
+ <paragraph index="165" node_type="writer">Untracked files — files in the working directory that are not yet being tracked by Git.</paragraph>
+ <paragraph index="166" node_type="writer">Changes not staged for commit — modified files that are not yet staged.</paragraph>
+ <paragraph index="167" node_type="writer">Changes to be committed — files that have been staged and are ready to be committed.</paragraph>
+ <paragraph index="168" node_type="writer">6  git add — Staging Changes</paragraph>
+ <paragraph index="169" node_type="writer">git add is used to add changes in the working directory to the staging area.</paragraph>
+ <paragraph index="170" node_type="writer">Purpose</paragraph>
+ <paragraph index="171" node_type="writer">Prepares changes to be included in the next commit.</paragraph>
+ <paragraph index="172" node_type="writer">Tracks new files and stages modifications or deletions of existing files.</paragraph>
+ <paragraph index="173" node_type="writer">Command Usage</paragraph>
+ <paragraph index="174" node_type="writer">git add &lt;file-name&gt; git add .          # stage all changes</paragraph>
+ <paragraph index="175" node_type="writer">7  git commit — Saving Changes</paragraph>
+ <paragraph index="176" node_type="writer">Overview</paragraph>
+ <paragraph index="177" node_type="writer">git commit saves the changes staged in the staging area to the local repository.</paragraph>
+ <paragraph index="178" node_type="writer">Each commit represents a snapshot of the project at a specific point in time.</paragraph>
+ <paragraph index="179" node_type="writer">Purpose</paragraph>
+ <paragraph index="180" node_type="writer">Records a complete history of changes made to the project.</paragraph>
+ <paragraph index="181" node_type="writer">Allows for tracking progress, reverting to previous states, and collaboration.</paragraph>
+ <paragraph index="182" node_type="writer">Command Usage</paragraph>
+ <paragraph index="183" node_type="writer">git commit -m &quot;commit message&quot;   # Creates a commit with a descriptive message</paragraph>
+ <paragraph index="184" node_type="writer">Commit Message Best Practices</paragraph>
+ <paragraph index="185" node_type="writer">Keep messages concise and descriptive.</paragraph>
+ <paragraph index="186" node_type="writer">8  git log — Viewing Commit History</paragraph>
+ <paragraph index="187" node_type="writer">git log displays the commit history for the repository.</paragraph>
+ <paragraph index="188" node_type="writer">Provides details about each commit, including the author, date, and commit message.</paragraph>
+ <paragraph index="189" node_type="writer">Purpose</paragraph>
+ <paragraph index="190" node_type="writer">Helps in tracking changes and understanding the project's history.</paragraph>
+ <paragraph index="191" node_type="writer">Useful for debugging and auditing changes.</paragraph>
+ <paragraph index="192" node_type="writer">Command Usage</paragraph>
+ <paragraph index="193" node_type="writer">git log                # Basic command git log --oneline      # Simplified, one-line-per-commit view git log -p             # Shows changes introduced in each commit git log --stat         # Shows statistics for files modified in each commit</paragraph>
+ <paragraph index="194" node_type="writer">9  .gitignore — Excluding Files from Version Control</paragraph>
+ <paragraph index="195" node_type="writer">The .gitignore file tells Git which files (or patterns) it should ignore and not track.</paragraph>
+ <paragraph index="196" node_type="writer">Purpose</paragraph>
+ <paragraph index="197" node_type="writer">Prevents certain files from being included in version control.</paragraph>
+ <paragraph index="198" node_type="writer">Commonly used for files generated during the build process, sensitive information, or files specific to a local environment.</paragraph>
+ <paragraph index="199" node_type="writer">Creating a .gitignore File</paragraph>
+ <paragraph index="200" node_type="writer">Create a file named .gitignore in the root directory of your project.</paragraph>
+ <paragraph index="201" node_type="writer">List the files and directories you want to ignore.</paragraph>
+ <paragraph index="202" node_type="writer">Syntax</paragraph>
+ <paragraph index="203" node_type="writer">Each line in the .gitignore file specifies a pattern.</paragraph>
+ <paragraph index="204" node_type="writer">*.log — ignores all .log files.</paragraph>
+ <paragraph index="205" node_type="writer">build/ — ignores the build directory.</paragraph>
+ <paragraph index="206" node_type="writer">config/settings.py — ignores a specific file.</paragraph>
+ <paragraph index="207" node_type="writer">Common Use Cases</paragraph>
+ <paragraph index="208" node_type="writer">Ignoring operating system files (e.g., Thumbs.db, .DS_Store).</paragraph>
+ <paragraph index="209" node_type="writer">Ignoring dependency directories (e.g., node_modules, venv).</paragraph>
+ <paragraph index="210" node_type="writer">Ignoring configuration files (e.g., *.env, config.yml).</paragraph>
+ <paragraph index="212" node_type="writer">Compiled while learning Git hands-on — one command at a time. 🚀</paragraph>
+ <paragraph index="214" node_type="writer">Screenshots of practical :</paragraph>
+</indexing>
